@@ -5,61 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RCC</title>
-    <link rel="shortcut icon" href="images/café preto.png" type="image/x-icon">
+    <link rel="shortcut icon" href="icons8-chanel-67.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <ion-icon name="heart-outline"></ion-icon>
+
 </head>
-<body style="background-color: rgb(105, 148, 121);">
+<body style="background-color: rgb(255, 255, 255);">
+    
     <section class="topo">
-        <img class="logo" src="images/icons8-chocolate-quente-96.png" alt="">
-        <section class="menubar">
-            <ul>
-                <a href=""><li>Página Inicial</li></a>
-                <a href="https://en.wikipedia.org/wiki/Chanel"><li>Sobre</li></a>
-                <a href="https://github.com/SamCristina/curriculobangchan"><li>Contato</li></a>
-                <a class="botao-secundario" href="https://pt.stardewvalleywiki.com/Stardew_Valley_Wiki"><li>Compre Agora!</li></a>
-            </ul>
-            <h1>Royal Coffee Cream</h1>
+        <a href="index.html"><img src="images/favicon.svg" alt="" /></a>
+        <nav class="menu-lateral">
+          <ion-icon
+                class="botao-menu-close"
+                name="close-outline"
+                onclick="toggleMenu()"></ion-icon>
+          <ul>
+              <a href="index.html"><li>Página inicial</li></a>
+            <a href="#produtos"><li>Produtos</li></a>
+            <a href="#beneficios"><li>Benefícios</li></a>
+            <a href="#sobre-nos"><li>Sobre nós</li></a>
+            <a class="botao-primario" href="">Comprar agora!</a>
+          </ul>
+        </nav>
+        <ion-icon
+          class="botao-menu"
+          name="menu-outline"
+          onclick="toggleMenu()"
+        ></ion-icon>
+      </section>
+
+    <section id="produtos">
+        <h2>Nossos produtos</h2>
+        <h3>A maior variedade de produtos do mercado.</h3>
+        <section class="produtos">
+            <section class="produto">
+                <img src="images/bolinhos.png" alt="">
+                <a class="botao-primario" href="">Comprar</a>
+            </section>
+            <section class="produto">
+                <img src="images/coffee.png" alt="">
+                <a class="botao-primario" href="">Comprar</a>
+            </section>
+            <section class="produto">
+                <img src="images/lemon pie.png" alt="">
+                <a class="botao-primario" href="">Comprar</a>
+            </section>
         </section>
     </section>
-    <section class="corpo">
-        <section class="esquerda">
-            <h1>Royal Coffee Cream</h1>
-            <p>RCC </p>
-            <p>aqui você come bem e paga puco, rcc a melhor e mais barata cafeteria!</p>
-            <a class="botao-primario" href=""> Compre Agora!</a>
-            <ion-icon name="heart-outline"></ion-icon>
-            
-        </section>
-        <section class="direita">
-            <img src="images/topo (2).png" alt="">
-            <section id="produtos">
-                <h2>Nossos produtos</h2>
-                <h3>Descubra o melhor do café!.</h3>
-                <section class="produtos">
-                    <section class="produto">
-                        <img src="images/bolinhos.png" alt="">
-                        <a class="botao-primario" href="">Comprar</a>
-                    </section>
-                    <section class="produto">
-                        <img src="images/coffee.png" alt="">
-                        <a class="botao-primario" href="">Comprar</a>
-                    </section>
-                    <section class="produto">
-                        <img src="images/lemon pie.png" alt="">
-                        <a class="botao-primario" href="">Comprar</a>
-                    </section>
-                </section>
+    <section id="beneficios">
+        <h2>Benefícios</h2>
+        <section class="beneficios">
+            <section class="beneficio">
+                <section class="beneficio-titulo">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <h4>Melhor preço.</h4>
             </section>
-            <section id="beneficios">
-                <h2>Benefícios</h2>
-                <section class="beneficios">
-                    <section class="beneficio">
-                        <section class="beneficio-titulo">
-                            <ion-icon name="checkmark-circle"></ion-icon>
-                            <h4>Melhor preço</h4>
-                    </section>
-                    <p>O melhor que cabe no seu bolso</p>
+            <p>Café super em conta e que cabe no seu bolso.</p>
             </section>
 
             <section class="beneficio">
@@ -67,14 +67,15 @@
                     <ion-icon name="checkmark-circle"></ion-icon>
                     <h4>Melhor qualidade</h4>
             </section>
-            <p>Tudo feito com os melhores ingredientes.</p>
+            <p>Tudo feito com os melhores produtos.</p>
             </section>
+
             <section class="beneficio">
                 <section class="beneficio-titulo">
                     <ion-icon name="checkmark-circle"></ion-icon>
-                    <h4>Politicamente correto!</h4>
+                    <h4>mais sustentabilidade.</h4>
             </section>
-            <p>Mais sustentabilidade.</p>
+            <p>politicamente correto.</p>
             </section>
         </section>
         <a class="botao-primario" href="">Comprar agora!</a>
@@ -87,18 +88,21 @@
         <section class="direita">
             <h2>Sobre nós</h2>
             <p>Bem-vindo á cafeteria RCC, aqui nos importamos com a sustentabilidade <br>
-                e a conservação, incluindo a redução de resíduos e o uso de água filtrada para garantir <br>
-                que nossa operação seja o mais sustentável possível. Estamos orgulhosos de ser um espaço <br>
-                inclusivo e diversificado que recebe todos com braços abertos. venha para a cafeteria <br>
-                hoje e descubra o café mais delicioso da cidade, visite a nossa loja fisica na rua tatata N 24.</p>
+                 e a conservação, incluindo a redução de resíduos e o uso <br>
+                  de água filtrada para garantir <br>
+                que nossa operação seja o mais sustentável <br>
+                possível. Estamos orgulhosos de ser <br>
+                um espaço inclusivo e diversificado que recebe todos com braços <br>
+                 abertos. venha para a cafeteria hoje e descubra o café mais delicioso da cidade, <br>
+                  visite a nossa loja fisica na rua tatata N 24.</p>
             <a class="botao-primario" href="">Comprar agora!</a>
             </section>
     </section>
 
     <footer>
         <section class="marca">
-            <img src="images/logo.svg" alt="">
-            <p>O café da realeza!</p>
+            <img src="images/icons8-chocolate-quente-96.png" alt="">
+            <p>Prove o café da realeza!</p>
         </section>
         <section class="informacoes">
             <h5>Informações</h5>
@@ -132,9 +136,12 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
-        </section>
-    </section>
+
+</section>
+</section>
+
+            
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
