@@ -5,33 +5,27 @@
   --preto: #000000;
   --branco: #76a16c;
 }
-
 * {
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: 'DM Sans', Arial, Helvetica, sans-serif;
   color: var(--roxo-mais-escuro);
 }
-
 .topo {
   padding: 40px 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .topo img {
   width: 60px;
 }
-
 ul {
   display: flex;
   align-items: center;
 }
-
 li {
   list-style-type: none;
   padding: 0 20px;
@@ -39,16 +33,13 @@ li {
   font-size: 16px;
   transition: transform 0.6s ease;
 }
-
 .topo li:hover {
   transform: translateY(-6px);
 }
-
 a {
   color: unset;
   text-decoration: none;
 }
-
 .botao-primario {
   font-weight: bold;
   background-color: var(--roxo-medio);
@@ -57,28 +48,25 @@ a {
   padding: 14px 26px;
   transition: opacity 0.6s ease;
 }
-
 .botao-primario:hover{
   opacity: 70%;
 }
 
-.corpo {
+#inicio {
   display: flex;
-  width: 100%;
   justify-content: space-between;
+  align-items: center;
+  width: fit-content;
   padding: 80px;
-  color: #ffffff;
-  background-color: var(--branco);
 }
 
-.corpo img {
+#inicio img {
   width: auto;
 }
 
-.corpo .esquerda {
+.esquerda {
   width: 35%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   gap: 30px;
 }
@@ -90,18 +78,53 @@ h1 {
   line-height: 110%;
 }
 
-.corpo .esquerda p {
+.esquerda p {
   font-size: 18px;
   line-height: 130%;
 }
 
-.corpo .esquerda .botao-primario {
+.esquerda .botao-primario {
   font-size: 22px;
   font-weight: bold;
   padding: 10px 50px;
   width: fit-content;
 }
 
+
+.corpo {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 80px;
+  color: #ffffff;
+  background-color: var(--branco);
+}
+.corpo img {
+  width: auto;
+}
+.corpo .esquerda {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+h1 {
+  font-weight: bold;
+  font-size: 50px;
+  width: 90%;
+  line-height: 110%;
+}
+.corpo .esquerda p {
+  font-size: 18px;
+  line-height: 130%;
+}
+.corpo .esquerda .botao-primario {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px 50px;
+  width: fit-content;
+}
 #produtos {
   width: 100%;
   display: flex;
@@ -110,18 +133,15 @@ h1 {
   align-items: center;
   padding: 40px 0;
 }
-
 .produtos {
   display: flex;
   justify-content: space-around;
   width: 100%;
   padding-top: 50px;
 }
-
 .produtos .botao-primario {
   text-align: center;
 }
-
 .produto {
   display: inline-flex;
   flex-direction: column;
@@ -129,26 +149,21 @@ h1 {
   gap: 34px;
   height: auto;
 }
-
 .produto a {
   width: 200px;
 }
-
 .produto img {
   height: auto; 
 }
-
 h2 {
   font-weight: bold;
   font-size: 50px;
   text-align: center;
 }
-
 h3 {
   font-weight: normal;
   font-size: 26px;
 }
-
 #beneficios {
   padding: 40px 0;
   display: flex;
@@ -157,7 +172,6 @@ h3 {
   align-items: center;
   justify-content: center;
 }
-
 .beneficios {
   padding: 0 100px;
   display: flex;
@@ -165,7 +179,6 @@ h3 {
   justify-content: center;
   align-items: center;
 }
-
 .beneficio-titulo {
   display: flex;
   align-items: center;
@@ -174,7 +187,6 @@ h3 {
   gap: 8px;
   width: 100%;
 }
-
 .beneficio {
   display: flex;
   flex-direction: column;
